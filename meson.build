@@ -123,6 +123,7 @@ add_project_arguments(
 
 subdir('lib')
 subdir('src')
+subdir('configs')
 
 message('\n'.join([
   '',

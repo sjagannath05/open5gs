@@ -111,7 +111,7 @@ upf_sources = files('''
 
 executable('open5gs-upfd',
     sources : upf_sources,
-    c_args : '-DDEFAULT_CONFIG_FILENAME="@0@/upf.yaml"'.format(open5gs_sysconfdir),
+    c_args : '-DDEFAULT_CONFIG_FILENAME="@0@/upf.yaml"',
     include_directories : srcinc,
     dependencies : libupf_dep,
     install_rpath : libdir,
