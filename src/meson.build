@@ -33,22 +33,5 @@ version_conf = configuration_data()
 version_conf.set_quoted('OPEN5GS_VERSION', package_version)
 configure_file(output : 'version.h', configuration : version_conf)
 
-subdir('mme')
-subdir('hss')
-subdir('sgwc')
-subdir('sgwu')
-subdir('pcrf')
-
-subdir('nrf')
-subdir('scp')
-subdir('sepp')
-
-subdir('udr')
-subdir('udm')
-subdir('pcf')
-subdir('nssf')
-subdir('bsf')
-subdir('ausf')
 subdir('upf')
-subdir('smf')
-subdir('amf')
+
