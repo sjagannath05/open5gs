@@ -22,7 +22,7 @@ RUN git clone --depth 1 --branch=upf-only https://github.com/sjagannath05/open5g
 	  && cd build && ninja install
 
 
-FROM ubuntu:${UBUNTU_VERSION}
+FROM ubuntu:${UBUNTU_VERSION} AS runtime
 
 # target container architecture
 ARG TARGETARCH
